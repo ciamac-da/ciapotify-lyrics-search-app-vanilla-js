@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Georama', sans-serif;
+margin: 0;
+background-color: orange;
+color:#fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95)
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+header {
+background-image: url("./assets/music.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+background-position: center center;
+display:flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+padding: 150px 0;
+position:relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+herder * {
+  z-index: 1
+}
+
+h1 {
+  margin: 0 0 30px;
+  font-size: 90px;
+  font-weight: bolder;
+  color: #fff;
+  text-shadow: 2px 2px 12px #000;
+}
